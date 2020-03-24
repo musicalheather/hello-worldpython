@@ -6,4 +6,4 @@ ADD . /app/
 RUN pip install -r app/requirements.txt
 
 EXPOSE 5002
-CMD ["python3.7", "/app/main.py"]
+CMD ["python3.7", "app/main.py"]
