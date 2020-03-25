@@ -12,7 +12,7 @@ docker images
 
 #Build new version
 
-docker build -f docker/Dockerfile -t hello-python:v8 .
+docker build -f docker/Dockerfile -t hello-python:v9 .
 
 #Tell Kubernetes to deploy new version to pods
 
