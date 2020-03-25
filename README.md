@@ -12,11 +12,11 @@ docker images
 
 #Build new version
 
-docker build -f docker/Dockerfile -t hello-python:<tag> .
+docker build -f docker/Dockerfile -t hello-python:v8 .
 
 #Tell Kubernetes to deploy new version to pods
 
-kubectl set image deployment hello-python hello-python=hello-python:<tag>
+kubectl set image deployment hello-python hello-python=hello-python:v8
 
 #List out Kubernetes pods
 
