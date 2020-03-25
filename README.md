@@ -8,15 +8,22 @@ Useful Commands
 
 #List Images
 docker images
+
 #Build new version
 docker build -f docker/Dockerfile -t hello-python:<tag> .
+
 #Tell Kubernetes to deploy new version to pods
 kubectl set image deployment hello-python hello-python=hello-python:<tag>
+
 #List out Kubernetes pods
 kubectl get pods
+
 #SSH into specified pod
 kubectl exec -it <pod> -- /bin/bash
+
 #Create kubernetes deployment
 kubectl apply -f kubernetes/deployment.yaml
+
 #Delete kubernetes deployment
 kubectl delete -f kubernetes/deployment.yaml
+
