@@ -16,7 +16,7 @@ docker build -f docker/Dockerfile -t hello-python:v9 .
 
 #Tell Kubernetes to deploy new version to pods
 
-kubectl set image deployment hello-python hello-python=hello-python:v8
+kubectl set image deployment hello-python hello-python=hello-python:v9
 
 #List out Kubernetes pods
 
