@@ -24,7 +24,7 @@ kubectl get pods
 
 #SSH into specified pod
 
-kubectl exec -it <pod> -- /bin/bash
+kubectl exec -it podname -- /bin/bash
 
 #Create kubernetes deployment
 
