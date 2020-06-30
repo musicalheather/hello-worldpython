@@ -5,5 +5,5 @@ WORKDIR /app
 ADD . /app/
 RUN pip install -r app/requirements.txt
 
-EXPOSE 5002
+EXPOSE 5000
 CMD ["python3.7", "app/main.py"]
